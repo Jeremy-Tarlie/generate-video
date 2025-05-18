@@ -87,13 +87,13 @@ node capture.js
 ```
 - Génère automatiquement les audios (appelle le script Python)
 - Lance un serveur local et le front
-- Capture la vidéo **et** l'audio synchronisé dans `test.webm`
+- Capture la vidéo **et** l'audio synchronisé dans `video.webm`
 - Coupe automatiquement à la bonne durée
 
 ### 3. (Optionnel) Convertir la vidéo en MP4
 
 ```bash
-ffmpeg -i test.webm -c:v libx264 -c:a aac output_final.mp4
+ffmpeg -i video.webm -c:v libx264 -c:a aac output_final.mp4
 ```
 
 ---
