@@ -63,7 +63,7 @@ npm install puppeteer puppeteer-stream express
 ├── generate_audio.py             # Script Python pour générer les audios et le JSON
 ├── index.html                    # Front animé (affichage des bulles + lecture audio)
 ├── capture.js                    # Script Node.js pour automatiser la capture vidéo+audio
-├── test.webm                     # Vidéo capturée (sortie)
+├── video.webm                     # Vidéo capturée (sortie)
 └── ...
 ```
 
