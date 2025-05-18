@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "generated_at": "2025-05-17 14:15:00"
+  },
+  "messages": [
+    {
+      "text": "Tu es bien entré dans la maison ? 🏚️",
+      "sender": "Camille",
+      "start_time": 0.0,
+      "duration": 2.7
+    },
+    {
+      "text": "Oui, mais c'est bizarre ici... 😟",
+      "sender": "Moi",
+      "start_time": 2.7,
+      "duration": 2.4
+    },
+    {
+      "text": "Tu vois quelque chose ? 🔦",
+      "sender": "Camille",
+      "start_time": 5.1,
+      "duration": 2.1
+    },
+    {
+      "text": "Juste un vieux miroir cassé... 🪞",
+      "sender": "Moi",
+      "start_time": 7.2,
+      "duration": 2.4
+    },
+    {
+      "text": "Fais attention, cette maison est maudite 😰",
+      "sender": "Camille",
+      "start_time": 9.6,
+      "duration": 3.2
+    },
+    {
+      "text": "Trop tard... la porte vient de se refermer 😳",
+      "sender": "Moi",
+      "start_time": 12.8,
+      "duration": 2.9
+    },
+    {
+      "text": "Essaye de sortir par une fenêtre ! 🪟",
+      "sender": "Camille",
+      "start_time": 15.7,
+      "duration": 2.4
+    },
+    {
+      "text": "Elles sont toutes bloquées ! 😬",
+      "sender": "Moi",
+      "start_time": 18.1,
+      "duration": 2.2
+    },
+    {
+      "text": "Il y a des bruits à l'étage... 👣",
+      "sender": "Moi",
+      "start_time": 20.3,
+      "duration": 2.7
+    },
+    {
+      "text": "Ne monte pas !! 😱",
+      "sender": "Camille",
+      "start_time": 23.0,
+      "duration": 1.7
+    },
+    {
+      "text": "Je dois savoir ce que c'est...",
+      "sender": "Moi",
+      "start_time": 24.7,
+      "duration": 2.1
+    },
+    {
+      "text": "Prends la lampe torche derrière la porte ! 🔦",
+      "sender": "Camille",
+      "start_time": 26.8,
+      "duration": 3.0
+    },
+    {
+      "text": "Ok, je l'ai.",
+      "sender": "Moi",
+      "start_time": 29.8,
+      "duration": 1.4
+    },
+    {
+      "text": "Il y a... une silhouette dans le miroir 😨",
+      "sender": "Moi",
+      "start_time": 31.2,
+      "duration": 3.0
+    },
+    {
+      "text": "Sors de là MAINTENANT !!! 🚪",
+      "sender": "Camille",
+      "start_time": 34.2,
+      "duration": 2.2
+    },
+    {
+      "text": "Le miroir... il vient de briller 😵‍💫",
+      "sender": "Moi",
+      "start_time": 36.4,
+      "duration": 2.7
+    },
+    {
+      "text": "Réponds ! Tu es toujours là ?! 😟",
+      "sender": "Camille",
+      "start_time": 39.1,
+      "duration": 2.6
+    },
+    {
+      "text": "Tu es là ?",
+      "sender": "Moi",
+      "start_time": 41.7,
+      "duration": 1.2
+    },
+    {
+      "text": "Oui, je suis là",
+      "sender": "Camille",
+      "start_time": 42.9,
+      "duration": 1.5
+    },
+    {
+      "text": "C'était juste un chat !",
+      "sender": "Camille",
+      "start_time": 44.4,
+      "duration": 1.6
+    }
+  ]
+}

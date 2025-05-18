@@ -1,0 +1,7 @@
+audios/
+*.mp4
+*.webm
+*.mp3
+venv/
+node_modules/
+package-lock.json
