@@ -12,3 +12,4 @@ package-lock.json
 *.svg
 *.ico
 *.webp
+videos/

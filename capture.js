@@ -8,7 +8,7 @@ const stream = require("puppeteer-stream");
 // Charger la durée depuis messages.json
 const messagesPath = path.resolve(__dirname, "messages.json");
 const messagesData = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
-const OUTPUT = "capture.mp4";
+const VIDEO_NAME = messagesData.metadata.name;
 
 // Fonction pour exécuter le script Python
 function runPythonScript(name) {
@@ -72,7 +72,7 @@ function waitForServerReady(url, timeout = 30000) {
   );
 
   try {
-    const file = fs.createWriteStream(__dirname + "/video.webm");
+    const file = fs.createWriteStream(__dirname + `/videos/${VIDEO_NAME}.webm`);
     await waitForServerReady("http://127.0.0.1:8080");
     async function startRecording() {
       const browser = await stream.launch({

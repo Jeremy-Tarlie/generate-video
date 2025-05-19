@@ -1,11 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2025-05-17 14:15:00"
+    "generated_at": "2025-05-17 14:15:00",
+    "name": "Maison maudite"
   },
   "destination": {
     "name": "Camille",
-    "avatar": "img.jpg"
+    "avatar": "avatar.png"
   },
+  "audio": "background.mp3",
   "messages": [
     {
       "text": "Tu es bien entré dans la maison ? 🏚️",
@@ -111,19 +113,19 @@
     },
     {
       "text": "Tu es là ?",
-      "sender": "Moi",
+      "sender": "Camille",
       "start_time": 41.7,
       "duration": 1.2
     },
     {
       "text": "Oui, je suis là",
-      "sender": "Camille",
+      "sender": "Moi",
       "start_time": 42.9,
       "duration": 1.5
     },
     {
       "text": "C'était juste un chat !",
-      "sender": "Camille",
+      "sender": "Moi",
       "start_time": 44.4,
       "duration": 1.6
     }
