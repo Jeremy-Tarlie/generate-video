@@ -80,6 +80,15 @@ python generate_audio.py
 - Les fichiers audio sont créés dans `audios/`
 - Un fichier `audios/messages_with_audio.json` est généré avec la durée totale
 
+**Remarque :** la voix utilisée pour chaque message est automatiquement choisie selon le champ `voice_mapping` du fichier `messages.json` (par exemple :
+```json
+  "voice_mapping": {
+    "Moi": "fr-FR-DeniseNeural",
+    "Camille": "fr-FR-EloiseNeural"
+  }
+```
+). Si un expéditeur n'est pas présent dans ce mapping, la voix par défaut sera utilisée.
+
 ### 2. Lancer la capture vidéo+audio automatisée
 
 ```bash
@@ -100,7 +109,7 @@ ffmpeg -i video.webm -c:v libx264 -c:a aac output_final.mp4
 
 ## Personnalisation
 
-- **Changer les voix** : modifie le mapping dans `generate_audio.py` (`VOICE_MAPPING`)
+- **Changer les voix** : modifie le mapping dans le fichier `messages.json`, section `voice_mapping`.
 - **Changer l'élément capturé** : dans `capture.js`, adapte la sélection de l'élément (ex : `.chat-container`)
 - **Changer le fond vidéo** : modifie le `<video>` dans `index.html`
 

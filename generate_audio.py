@@ -6,12 +6,6 @@ from moviepy.audio.io.AudioFileClip import AudioFileClip
 import re
 import unicodedata
 
-VOICE_MAPPING = {
-    "Moi": "fr-FR-DeniseNeural",
-    "Camille": "fr-FR-EloiseNeural"
-}
-
-
 def remove_emojis(text):
     """Supprime les emojis et caractères spéciaux du texte"""
     return ''.join(
@@ -24,14 +18,16 @@ async def generate_audio_and_json(messages_file, output_json_dir):
     global DURATION_TOTAL
     DURATION_TOTAL = 0
     with open(messages_file, "r", encoding="utf-8") as f:
-        messages = json.load(f)["messages"]
+        data = json.load(f)
+        messages = data["messages"]
+        voice_mapping = data["voice_mapping"]
 
     os.makedirs(output_json_dir, exist_ok=True)
     result = []
     for idx, msg in enumerate(messages):
         text = remove_emojis(msg["text"])
         sender = msg["sender"]
-        voice = VOICE_MAPPING.get(sender, "fr-FR-DeniseNeural")
+        voice = voice_mapping.get(sender, "fr-FR-DeniseNeural")
         audio_path = os.path.join(output_json_dir, f"audio_{idx}.mp3")
         communicate = Communicate(text, voice)
         await communicate.save(audio_path)
