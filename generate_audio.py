@@ -25,23 +25,37 @@ async def generate_audio_and_json(messages_file, output_json_dir):
     os.makedirs(output_json_dir, exist_ok=True)
     result = []
     for idx, msg in enumerate(messages):
-        text = remove_emojis(msg["text"])
         sender = msg["sender"]
-        voice = voice_mapping.get(sender, "fr-FR-DeniseNeural")
-        audio_path = os.path.join(output_json_dir, f"audio_{idx}.mp3")
-        communicate = Communicate(text, voice)
-        await communicate.save(audio_path)
-        # Get duration
-        audio_clip = AudioFileClip(audio_path)
-        duration = audio_clip.duration
-        DURATION_TOTAL += duration
-        audio_clip.close()
-        result.append({
-            "sender": sender,
-            "text": text,
-            "audio": audio_path,
-            "duration": duration
-        })
+        if "image" in msg:
+            audio_path = "iphone.mp3"  # doit être présent dans le dossier de travail
+            # Récupérer la durée du son iPhone
+            audio_clip = AudioFileClip(audio_path)
+            duration = audio_clip.duration
+            DURATION_TOTAL += duration
+            audio_clip.close()
+            result.append({
+                "sender": sender,
+                "image": msg["image"],
+                "audio": audio_path,
+                "duration": duration
+            })
+        else:
+            text = remove_emojis(msg["text"])
+            voice = voice_mapping.get(sender, "fr-FR-DeniseNeural")
+            audio_path = os.path.join(output_json_dir, f"audio_{idx}.mp3")
+            communicate = Communicate(text, voice)
+            await communicate.save(audio_path)
+            # Get duration
+            audio_clip = AudioFileClip(audio_path)
+            duration = audio_clip.duration
+            DURATION_TOTAL += duration
+            audio_clip.close()
+            result.append({
+                "sender": sender,
+                "text": text,
+                "audio": audio_path,
+                "duration": duration
+            })
 
     with open(os.path.join(output_json_dir, "messages_with_audio.json"), "w", encoding="utf-8") as f:
         json.dump({

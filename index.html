@@ -155,7 +155,17 @@
         div.className = msg.sender === "Moi" ? "user" : "other";
         const bubble = document.createElement("div");
         bubble.className = "bubble";
-        bubble.textContent = msg.text;
+        if (msg.image) {
+          const img = document.createElement("img");
+          img.src = msg.image;
+          img.alt = "Image envoyée";
+          img.style.maxWidth = "120px";
+          img.style.maxHeight = "120px";
+          img.style.borderRadius = "8px";
+          bubble.appendChild(img);
+        } else {
+          bubble.textContent = msg.text;
+        }
         div.appendChild(bubble);
         return div;
       }

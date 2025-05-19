@@ -17,29 +17,64 @@
     { "text": "Oui, mais c'est bizarre ici... 😟", "sender": "Moi" },
     { "text": "Tu vois quelque chose ? 🔦", "sender": "Camille" },
     { "text": "Juste un vieux miroir cassé... 🪞", "sender": "Moi" },
-    { "text": "Fais attention, cette maison est maudite 😰", "sender": "Camille" },
-    { "text": "Trop tard... la porte vient de se refermer 😳", "sender": "Moi" },
+    {
+      "text": "Fais attention, cette maison est maudite 😰",
+      "sender": "Camille"
+    },
+    {
+      "text": "Trop tard... la porte vient de se refermer 😳",
+      "sender": "Moi"
+    },
     { "text": "Essaye de sortir par une fenêtre ! 🪟", "sender": "Camille" },
     { "text": "Elles sont toutes bloquées ! 😬", "sender": "Moi" },
     { "text": "Il y a des bruits à l'étage... 👣", "sender": "Moi" },
     { "text": "Ne monte pas !! 😱", "sender": "Camille" },
     { "text": "Je dois savoir ce que c'est...", "sender": "Moi" },
-    { "text": "Prends la lampe torche derrière la porte ! 🔦", "sender": "Camille" },
+    {
+      "text": "Prends la lampe torche derrière la porte ! 🔦",
+      "sender": "Camille"
+    },
     { "text": "Ok, je l'ai.", "sender": "Moi" },
-    { "text": "Je monte les escaliers... ils grincent à chaque pas.", "sender": "Moi" },
+    {
+      "text": "Je monte les escaliers... ils grincent à chaque pas.",
+      "sender": "Moi"
+    },
     { "text": "Tu es folle ! 😨", "sender": "Camille" },
-    { "text": "Il y a un couloir. Plusieurs portes. Une est entrouverte.", "sender": "Moi" },
+    {
+      "text": "Il y a un couloir. Plusieurs portes. Une est entrouverte.",
+      "sender": "Moi"
+    },
     { "text": "Va pas là-bas...!", "sender": "Camille" },
-    { "text": "Trop tard. J'entends comme une voix chuchoter derrière la porte...", "sender": "Moi" },
+    {
+      "text": "Trop tard. J'entends comme une voix chuchoter derrière la porte...",
+      "sender": "Moi"
+    },
     { "text": "QUOI ? 😱", "sender": "Camille" },
     { "text": "Je l'ouvre doucement…", "sender": "Moi" },
-    { "text": "Il y a une pièce remplie de miroirs. Tous me reflètent, sauf un...", "sender": "Moi" },
+    {
+      "text": "Il y a une pièce remplie de miroirs. Tous me reflètent, sauf un...",
+      "sender": "Moi"
+    },
+    {
+      "text": "Ça ressemble à ça ?",
+      "sender": "Camille"
+    },
+    {
+      "image": "https://images.stockcake.com/public/5/c/4/5c4d558a-55c5-43ac-94f4-eb796f855b8f_large/mysterious-antique-mirror-stockcake.jpg",
+      "sender": "Camille"
+    },
     { "text": "Un seul miroir ne me reflète pas 😨", "sender": "Moi" },
     { "text": "Camille, ce miroir... il me donne le vertige", "sender": "Moi" },
     { "text": "SORS DE CETTE PIÈCE !!!", "sender": "Camille" },
-    { "text": "Je crois que j'ai vu bouger mon reflet... mais je n’ai pas bougé.", "sender": "Moi" },
+    {
+      "text": "Je crois que j'ai vu bouger mon reflet... mais je n’ai pas bougé.",
+      "sender": "Moi"
+    },
     { "text": "Qu'est-ce que tu racontes ?!", "sender": "Camille" },
-    { "text": "Il y a... une silhouette derrière moi dans le miroir 😵", "sender": "Moi" },
+    {
+      "text": "Il y a... une silhouette derrière moi dans le miroir 😵",
+      "sender": "Moi"
+    },
     { "text": "Tu dois partir, maintenant !", "sender": "Camille" },
     { "text": "Le miroir s'est mis à briller… il vibre…", "sender": "Moi" },
     { "text": "Réponds ! Tu es toujours là ?! 😟", "sender": "Camille" },
