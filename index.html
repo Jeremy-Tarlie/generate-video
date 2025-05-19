@@ -22,7 +22,7 @@
         background: #111;
         border-radius: 8px;
         padding: 10px 5px 5px 5px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
         position: absolute;
         left: 50%;
         top: 50%;
@@ -55,12 +55,27 @@
         max-width: 80%;
         font-size: 12px;
       }
-      .username {
+      .destinator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         font-weight: bold;
         margin-bottom: 10px;
         color: #bbb;
         font-size: 13px;
+        border-bottom: solid rgb(82, 82, 82);
+      }
+      .username {
+        text-align: center;
+        margin-left: 10px;
+        font-size: 14px;
+      }
+      .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
       }
       .backgroundGif {
         width: 800px;
@@ -75,93 +90,122 @@
   </head>
   <body>
     <div class="backgroundGif">
-      <video id="bgVideo" src="background.mp4" loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+      <video
+        id="bgVideo"
+        src="background.mp4"
+        loop
+        playsinline
+        style="width: 100%; height: 100%; object-fit: cover; display: block"
+      ></video>
     </div>
     <div class="chat-container">
-      <div class="username">Imbécile 2.0</div>
+      <div class="destinator">
+        <img src="" alt="" class="avatar" />
+        <p class="username"></p>
+      </div>
+      <div class="messages"></div>
     </div>
     <script>
-        let messages = [];
-        let current = 0;
+      async function fetchDestinator() {
+        try {
+          const response = await fetch("messages.json");
+          messages = await response.json();
+          destinatorObject = messages.destination;
+        } catch (error) {
+          console.error("Erreur lors du chargement des messages:", error);
+        }
+        const destinator = document.querySelector(".username");
+        destinator.textContent = destinatorObject.name;
+        const avatar = document.querySelector(".avatar");
+        avatar.src = destinatorObject.avatar;
+        avatar.alt = destinatorObject.name;
+        console.log(avatar);
+        console.log(destinatorObject);
+      }
+      fetchDestinator();
+    </script>
+    <script>
+      let messages = [];
+      let current = 0;
 
-        async function fetchMessages() {
-            try {
-                const response = await fetch('audios/messages_with_audio.json');
-                messages = await response.json();
-                messages = messages.messages;
-            } catch (error) {
-                console.error("Erreur lors du chargement des messages:", error);
-            }
+      async function fetchMessages() {
+        try {
+          const response = await fetch("audios/messages_with_audio.json");
+          messages = await response.json();
+          messages = messages.messages;
+        } catch (error) {
+          console.error("Erreur lors du chargement des messages:", error);
+        }
+      }
+
+      function createBubble(msg) {
+        const div = document.createElement("div");
+        div.className = msg.sender === "Moi" ? "user" : "other";
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.textContent = msg.text;
+        div.appendChild(bubble);
+        return div;
+      }
+
+      function resetChat(chatContainer, header) {
+        chatContainer.innerHTML = "";
+        if (header) chatContainer.appendChild(header);
+      }
+
+      async function playMessageWithAudio() {
+        if (current >= messages.length) return;
+
+        const chatContainer = document.querySelector(".chat-container");
+        const header = chatContainer.querySelector(".destinator");
+        const msg = messages[current];
+
+        // Créer et ajouter la bulle
+        const bubble = createBubble(msg);
+        chatContainer.appendChild(bubble);
+
+        // Vérifier et réinitialiser si nécessaire
+        if (chatContainer.offsetHeight > 300) {
+          resetChat(chatContainer, header);
+          chatContainer.appendChild(bubble);
         }
 
-        function createBubble(msg) {
-            const div = document.createElement("div");
-            div.className = msg.sender === "Moi" ? "user" : "other";
-            const bubble = document.createElement("div");
-            bubble.className = "bubble";
-            bubble.textContent = msg.text;
-            div.appendChild(bubble);
-            return div;
-        }
+        // Jouer l'audio
+        const audio = new Audio(msg.audio);
+        audio.onended = () => {
+          current++;
+          playMessageWithAudio();
+        };
 
-        function resetChat(chatContainer, header) {
-            chatContainer.innerHTML = "";
-            if (header) chatContainer.appendChild(header);
-        }
-
-        async function playMessageWithAudio() {
-            if (current >= messages.length) return;
-
-            const chatContainer = document.querySelector(".chat-container");
-            const header = chatContainer.querySelector(".username");
-            const msg = messages[current];
-
-            // Créer et ajouter la bulle
-            const bubble = createBubble(msg);
-            chatContainer.appendChild(bubble);
-
-            // Vérifier et réinitialiser si nécessaire
-            if (chatContainer.offsetHeight > 300) {
-                resetChat(chatContainer, header);
-                chatContainer.appendChild(bubble);
-            }
-
-            // Jouer l'audio
-            const audio = new Audio(msg.audio);
-            audio.onended = () => {
-                current++;
-                playMessageWithAudio();
-            };
-            
-            try {
-                await audio.play();
-            } catch (error) {
-                console.error("Erreur lors de la lecture audio:", error);
-                // En cas d'erreur, passer au message suivant après un délai
-                setTimeout(() => {
-                    current++;
-                    playMessageWithAudio();
-                }, 1000);
-            }
-        }
-
-        async function setup() {
-            await fetchMessages();
-            const chatContainer = document.querySelector(".chat-container");
-            const header = chatContainer.querySelector(".username");
-            chatContainer.innerHTML = "";
-            if (header) chatContainer.appendChild(header);
-            
+        try {
+          await audio.play();
+        } catch (error) {
+          console.error("Erreur lors de la lecture audio:", error);
+          // En cas d'erreur, passer au message suivant après un délai
+          setTimeout(() => {
+            current++;
             playMessageWithAudio();
+          }, 1000);
         }
+      }
 
-        // Démarrage automatique
-        window.addEventListener('DOMContentLoaded', function() {
-            const video = document.getElementById("bgVideo");
-            video.muted = true;
-            video.play().catch(() => {});
-            setup();
-        });
+      async function setup() {
+        await fetchMessages();
+        const chatContainer = document.querySelector(".chat-container");
+        const header = chatContainer.querySelector(".destinator");
+        chatContainer.innerHTML = "";
+        if (header) chatContainer.appendChild(header);
+
+        playMessageWithAudio();
+      }
+
+      // Démarrage automatique
+      window.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("bgVideo");
+        video.muted = true;
+        video.play().catch(() => {});
+        setup();
+      });
     </script>
   </body>
 </html>
