@@ -1,85 +1,57 @@
 {
   "metadata": {
-    "generated_at": "2025-05-19 14:15:00",
-    "name": "Maison_maudite"
+    "generated_at": "2025-05-20 00:26:15",
+    "name": "Le Secret du Grenier"
   },
   "destination": {
-    "name": "Camille",
+    "name": "Émilie",
     "avatar": "avatar.png"
   },
   "voice_mapping": {
-    "Moi": "fr-FR-DeniseNeural",
-    "Camille": "fr-FR-EloiseNeural"
+    "Moi": "fr-FR-HenriNeural",
+    "Émilie": "fr-FR-DeniseNeural"
   },
-  "audio": "background.mp3",
+  "audio": "ambiance_mysterieuse.mp3",
   "messages": [
-    { "text": "Tu es bien entré dans la maison ? 🏚️", "sender": "Camille" },
-    { "text": "Oui, mais c'est bizarre ici... 😟", "sender": "Moi" },
-    { "text": "Tu vois quelque chose ? 🔦", "sender": "Camille" },
-    { "text": "Juste un vieux miroir cassé... 🪞", "sender": "Moi" },
     {
-      "text": "Fais attention, cette maison est maudite 😰",
-      "sender": "Camille"
+      "text": "Tu es bien arrivé dans la maison de ton oncle ? 🏡",
+      "sender": "Émilie"
     },
     {
-      "text": "Trop tard... la porte vient de se refermer 😳",
+      "text": "Oui, c'est une vieille bâtisse pleine de charme. Mais il y a quelque chose d'étrange ici... 😕",
       "sender": "Moi"
     },
-    { "text": "Essaye de sortir par une fenêtre ! 🪟", "sender": "Camille" },
-    { "text": "Elles sont toutes bloquées ! 😬", "sender": "Moi" },
-    { "text": "Il y a des bruits à l'étage... 👣", "sender": "Moi" },
-    { "text": "Ne monte pas !! 😱", "sender": "Camille" },
-    { "text": "Je dois savoir ce que c'est...", "sender": "Moi" },
+    { "text": "Étrange comment ?", "sender": "Émilie" },
     {
-      "text": "Prends la lampe torche derrière la porte ! 🔦",
-      "sender": "Camille"
-    },
-    { "text": "Ok, je l'ai.", "sender": "Moi" },
-    {
-      "text": "Je monte les escaliers... ils grincent à chaque pas.",
+      "text": "Le grenier est verrouillé, et mon oncle m'a interdit d'y entrer. Il dit que c'est dangereux.",
       "sender": "Moi"
     },
-    { "text": "Tu es folle ! 😨", "sender": "Camille" },
+    { "text": "Tu vas respecter sa consigne ?", "sender": "Émilie" },
     {
-      "text": "Il y a un couloir. Plusieurs portes. Une est entrouverte.",
-      "sender": "Moi"
-    },
-    { "text": "Va pas là-bas...!", "sender": "Camille" },
-    {
-      "text": "Trop tard. J'entends comme une voix chuchoter derrière la porte...",
-      "sender": "Moi"
-    },
-    { "text": "QUOI ? 😱", "sender": "Camille" },
-    { "text": "Je l'ouvre doucement…", "sender": "Moi" },
-    {
-      "text": "Il y a une pièce remplie de miroirs. Tous me reflètent, sauf un...",
+      "text": "Je suis trop curieux... J'ai trouvé une vieille clé dans la bibliothèque. Je vais essayer d'ouvrir la porte.",
       "sender": "Moi"
     },
     {
-      "text": "Ça ressemble à ça ?",
-      "sender": "Camille"
+      "text": "Sois prudent, on ne sait jamais ce qu'on peut y trouver.",
+      "sender": "Émilie"
     },
     {
-      "image": "https://images.stockcake.com/public/5/c/4/5c4d558a-55c5-43ac-94f4-eb796f855b8f_large/mysterious-antique-mirror-stockcake.jpg",
-      "sender": "Camille"
-    },
-    { "text": "Un seul miroir ne me reflète pas 😨", "sender": "Moi" },
-    { "text": "Camille, ce miroir... il me donne le vertige", "sender": "Moi" },
-    { "text": "SORS DE CETTE PIÈCE !!!", "sender": "Camille" },
-    {
-      "text": "Je crois que j'ai vu bouger mon reflet... mais je n’ai pas bougé.",
+      "text": "La porte s'est ouverte. Il fait sombre, mais je distingue des silhouettes... Des mannequins anciens, alignés contre le mur.",
       "sender": "Moi"
     },
-    { "text": "Qu'est-ce que tu racontes ?!", "sender": "Camille" },
+    { "text": "Des mannequins ? C'est vraiment bizarre.", "sender": "Émilie" },
     {
-      "text": "Il y a... une silhouette derrière moi dans le miroir 😵",
+      "text": "Oui, et il y a un miroir brisé au fond de la pièce. En m'approchant, j'ai l'impression que mon reflet bouge indépendamment de moi.",
       "sender": "Moi"
     },
-    { "text": "Tu dois partir, maintenant !", "sender": "Camille" },
-    { "text": "Le miroir s'est mis à briller… il vibre…", "sender": "Moi" },
-    { "text": "Réponds ! Tu es toujours là ?! 😟", "sender": "Camille" },
-    { "text": "Tu es là ?", "sender": "Camille" },
-    { "text": "Oui, je suis là", "sender": "Moi" },
-    { "text": "C'était juste un chat !", "sender": "Moi" }
+    {
+      "text": "Tu devrais sortir de là. Ça devient vraiment inquiétant.",
+      "sender": "Émilie"
+    },
+    {
+      "text": "Je suis d'accord. En refermant la porte, j'ai entendu un murmure derrière moi. Je vais éviter le grenier à l'avenir.",
+      "sender": "Moi"
+    },
+    { "text": "Bonne idée. Reste en sécurité.", "sender": "Émilie" }
   ]
 }
