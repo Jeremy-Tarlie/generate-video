@@ -1,85 +1,95 @@
 {
   "metadata": {
-    "generated_at": "2025-05-19 14:15:00",
-    "name": "Maison_maudite"
+    "name": "L'Ombre dans le Miroir_1747744632",
+    "description": "Une histoire de mystère et d'horreur qui vous emmène dans les profondeurs de son esprit.",
+    "tags": [
+      "#mystère",
+      "#horreur",
+      "#peur",
+      "#SMS"
+    ]
   },
   "destination": {
-    "name": "Camille",
+    "name": "Numéro à ne pas répondre 🚫",
     "avatar": "avatar.png"
   },
   "voice_mapping": {
-    "Moi": "fr-FR-DeniseNeural",
-    "Camille": "fr-FR-EloiseNeural"
+    "Numéro à ne pas répondre 🚫": "fr-CH-FabriceNeural",
+    "Moi": "fr-BE-GerardNeural"
   },
   "audio": "background.mp3",
   "messages": [
-    { "text": "Tu es bien entré dans la maison ? 🏚️", "sender": "Camille" },
-    { "text": "Oui, mais c'est bizarre ici... 😟", "sender": "Moi" },
-    { "text": "Tu vois quelque chose ? 🔦", "sender": "Camille" },
-    { "text": "Juste un vieux miroir cassé... 🪞", "sender": "Moi" },
     {
-      "text": "Fais attention, cette maison est maudite 😰",
-      "sender": "Camille"
+      "sender": "Gerard Neurál",
+      "text": "J'ai entendu parler d'une femme qui a perdu sa famille dans une forêt étrange. Elle s'est retrouvée face à l'ombre de la maison où elle avait passé sa jeunesse."
     },
     {
-      "text": "Trop tard... la porte vient de se refermer 😳",
-      "sender": "Moi"
-    },
-    { "text": "Essaye de sortir par une fenêtre ! 🪟", "sender": "Camille" },
-    { "text": "Elles sont toutes bloquées ! 😬", "sender": "Moi" },
-    { "text": "Il y a des bruits à l'étage... 👣", "sender": "Moi" },
-    { "text": "Ne monte pas !! 😱", "sender": "Camille" },
-    { "text": "Je dois savoir ce que c'est...", "sender": "Moi" },
-    {
-      "text": "Prends la lampe torche derrière la porte ! 🔦",
-      "sender": "Camille"
-    },
-    { "text": "Ok, je l'ai.", "sender": "Moi" },
-    {
-      "text": "Je monte les escaliers... ils grincent à chaque pas.",
-      "sender": "Moi"
-    },
-    { "text": "Tu es folle ! 😨", "sender": "Camille" },
-    {
-      "text": "Il y a un couloir. Plusieurs portes. Une est entrouverte.",
-      "sender": "Moi"
-    },
-    { "text": "Va pas là-bas...!", "sender": "Camille" },
-    {
-      "text": "Trop tard. J'entends comme une voix chuchoter derrière la porte...",
-      "sender": "Moi"
-    },
-    { "text": "QUOI ? 😱", "sender": "Camille" },
-    { "text": "Je l'ouvre doucement…", "sender": "Moi" },
-    {
-      "text": "Il y a une pièce remplie de miroirs. Tous me reflètent, sauf un...",
-      "sender": "Moi"
+      "sender": "Moi",
+      "text": "Non, Gerad, cela ne peut pas être vrai ! Je suis là pour vous aider et vous protéger."
     },
     {
-      "text": "Ça ressemble à ça ?",
-      "sender": "Camille"
+      "sender": "Gerard Neurál",
+      "text": "Je sais que ce n'est pas vrai, mais je suis prêt à aller dans la forêt et à explorer. Queltemps attendons-nous ?"
     },
     {
-      "image": "https://images.stockcake.com/public/5/c/4/5c4d558a-55c5-43ac-94f4-eb796f855b8f_large/mysterious-antique-mirror-stockcake.jpg",
-      "sender": "Camille"
+      "sender": "Moi",
+      "text": "Ne va pas, Gerad ! Ce n'est pas un jeu de danger ou d'aventure ! Nous devons rester calmés et nous protéger."
     },
-    { "text": "Un seul miroir ne me reflète pas 😨", "sender": "Moi" },
-    { "text": "Camille, ce miroir... il me donne le vertige", "sender": "Moi" },
-    { "text": "SORS DE CETTE PIÈCE !!!", "sender": "Camille" },
     {
-      "text": "Je crois que j'ai vu bouger mon reflet... mais je n’ai pas bougé.",
-      "sender": "Moi"
+      "sender": "Gerard Neurál",
+      "text": "Je ne comprends pas pourquoi tu me dis ça, moi. Je veux juste essayer de comprendre ce qui se passe."
     },
-    { "text": "Qu'est-ce que tu racontes ?!", "sender": "Camille" },
     {
-      "text": "Il y a... une silhouette derrière moi dans le miroir 😵",
-      "sender": "Moi"
+      "sender": "Moi",
+      "text": "Non, Gerad ! Nous ne sommes pas dans un jeu ! Nous devons nous protéger et trouver une solution pour arrêter cette ombre."
     },
-    { "text": "Tu dois partir, maintenant !", "sender": "Camille" },
-    { "text": "Le miroir s'est mis à briller… il vibre…", "sender": "Moi" },
-    { "text": "Réponds ! Tu es toujours là ?! 😟", "sender": "Camille" },
-    { "text": "Tu es là ?", "sender": "Camille" },
-    { "text": "Oui, je suis là", "sender": "Moi" },
-    { "text": "C'était juste un chat !", "sender": "Moi" }
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je suis prêt à faire ce que il faut. Je veux juste savoir pourquoi cela est arrivé."
+    },
+    {
+      "sender": "Moi",
+      "text": "Réfléchis, Gerad ! Nous ne savons pas ce qui se passe dans cette forêt et nous devons être prudents. Ne t'approches pas trop de la réalité."
+    },
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je suis prêt à aller à l'encontre de toi, Moi ! Je veux savoir qui est cette ombre et pourquoi elle nous attend."
+    },
+    {
+      "sender": "Moi",
+      "text": "Gerad, garde la tête ! Nous ne pouvons pas permettre que tu te mettes dans une situation dangereuse. Tu dois rester vigilant."
+    },
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je vais prendre des mesures pour m'assurer de mon côté. Vous allez me voir à l'endroit où je suis le plus en sécurité."
+    },
+    {
+      "sender": "Moi",
+      "text": "C'est fini, Gerad ! Nous devons te protéger et nous allons trouver une solution pour arrêter cette ombre de notre vie."
+    },
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je suis prêt à te faire tout ce que tu veux pour m'aider. Je suis prêt à tout pour protéger toi."
+    },
+    {
+      "sender": "Moi",
+      "text": "Ne t'arrête pas, Gerad ! Nous allons nous voir par la fin et nous allons trouver une solution avant que ce ne soit trop tard."
+    },
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je suis prêt à me battre pour protéger toi. Je te promets de l'aider et d'arrêter cette ombre."
+    },
+    {
+      "sender": "Moi",
+      "text": "Reste en avant, Gerad ! Nous ne pouvons pas nous laisser décourager et nous allons continuer à travailler ensemble pour trouver une solution."
+    },
+    {
+      "sender": "Gerard Neurál",
+      "text": "Je comprends. Je vais rester vigilant et protéger toi jusqu'à ce que tout soit fini."
+    },
+    {
+      "sender": "Moi",
+      "text": "C'est fini, Gerad ! Nous avons résolu le problème et nous sommes tous les deux en sécurité maintenant."
+    }
   ]
 }

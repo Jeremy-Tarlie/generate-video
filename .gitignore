@@ -13,3 +13,10 @@ package-lock.json
 *.ico
 *.webp
 videos/
+.env
+token.json
+client_secrets.json
+__pycache__/
+*.pyc
+logs/
+stories/
