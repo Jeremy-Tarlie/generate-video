@@ -5,8 +5,9 @@ const express = require("express");
 const fs = require("fs");
 const stream = require("puppeteer-stream");
 
-// Charger la durée depuis messages.json
-const messagesPath = path.resolve(__dirname, "messages.json");
+// Récupère le nom du fichier sans le @ éventuel
+const JSON_NAME = process.argv[2].replace(/^@/, "");
+const messagesPath = path.resolve(__dirname, "stories", JSON_NAME);
 const messagesData = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
 const VIDEO_NAME = messagesData.metadata.name;
 

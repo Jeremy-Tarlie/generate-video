@@ -1,3 +1,22 @@
 gTTS
 moviepy
 edge_tts
+python-dotenv
+
+# Instagram
+instagrapi
+
+# Tiktok    
+selenium
+webdriver-manager
+
+# Youtube
+google-api-python-client 
+google-auth-oauthlib 
+google-auth-httplib2
+
+# OpenAI
+openai
+
+# Scheduler
+schedule
